@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="JogoDaVelha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogada:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nAP-8u-RuZ">
+                                <rect key="frame" x="153.33333333333334" y="94" width="86.333333333333343" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ufw-sO-RxE">
+                                <rect key="frame" x="175" y="132" width="43" height="71.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="fC7-ba-GPw">
+                                <rect key="frame" x="19.666666666666657" y="261.66666666666663" width="353.66666666666674" height="353.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="9Cv-eq-lIl">
+                                        <rect key="frame" x="0.0" y="0.0" width="353.66666666666669" height="114"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ezp-6j-Sve">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="114"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="49d-bd-5Vy"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRm-su-ZUO">
+                                                <rect key="frame" x="119.66666666666669" y="0.0" width="114.33333333333331" height="114"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rPr-fW-Zct"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j72-Nk-Ou0">
+                                                <rect key="frame" x="239.00000000000003" y="0.0" width="114.66666666666666" height="114"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VhN-8p-JYz"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gKl-dx-RPp">
+                                        <rect key="frame" x="0.0" y="120" width="353.66666666666669" height="113.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xAu-ze-Fma">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="113.66666666666667"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="89W-Db-dsb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6XA-KN-Rfm">
+                                                <rect key="frame" x="119.66666666666669" y="0.0" width="114.33333333333331" height="113.66666666666667"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="32q-E3-HwJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUK-bt-Vw0">
+                                                <rect key="frame" x="239.00000000000003" y="0.0" width="114.66666666666666" height="113.66666666666667"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EQI-hb-DLx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="X4a-Nd-qh2">
+                                        <rect key="frame" x="0.0" y="239.66666666666663" width="353.66666666666669" height="114"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjr-ZJ-EBM">
+                                                <rect key="frame" x="0.0" y="0.0" width="114.66666666666667" height="114"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wks-mZ-FXZ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdg-ky-c2m">
+                                                <rect key="frame" x="119.66666666666669" y="0.0" width="114.33333333333331" height="114"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAs-PD-DVL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N8F-YW-Ua6">
+                                                <rect key="frame" x="239.00000000000003" y="0.0" width="114.66666666666666" height="114"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" systemColor="labelColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="CasaClicada:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6uY-os-vML"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="labelColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="fC7-ba-GPw" secondAttribute="height" multiplier="1:1" id="7rd-6U-mDf"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vitórias:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qae-7Q-JqS">
+                                <rect key="frame" x="120" y="644" width="153" height="40.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NfL-ZP-TOt">
+                                <rect key="frame" x="111" y="707.33333333333337" width="23.333333333333343" height="38.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="O" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j4S-aI-vlK">
+                                <rect key="frame" x="257" y="707.33333333333337" width="25" height="38.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7cM-Ve-zpw">
+                                <rect key="frame" x="111" y="753.66666666666663" width="23.333333333333343" height="25.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVt-lk-Seo">
+                                <rect key="frame" x="257" y="753.66666666666663" width="25" height="25.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7cM-Ve-zpw" firstAttribute="leading" secondItem="NfL-ZP-TOt" secondAttribute="leading" id="0pa-BP-Orh"/>
+                            <constraint firstItem="sVt-lk-Seo" firstAttribute="leading" secondItem="j4S-aI-vlK" secondAttribute="leading" id="1ZT-cn-emY"/>
+                            <constraint firstItem="fC7-ba-GPw" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="24L-1T-cDw"/>
+                            <constraint firstItem="fC7-ba-GPw" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3Z5-5w-YVi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7cM-Ve-zpw" secondAttribute="bottom" constant="39" id="4Ek-sh-0jb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sVt-lk-Seo" secondAttribute="bottom" constant="39" id="5Ac-9Z-fbl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qae-7Q-JqS" secondAttribute="trailing" constant="120" id="9OP-nv-VCq"/>
+                            <constraint firstItem="Ufw-sO-RxE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="175" id="BAP-Jb-z6d"/>
+                            <constraint firstItem="fC7-ba-GPw" firstAttribute="top" secondItem="Ufw-sO-RxE" secondAttribute="bottom" constant="58" id="BcH-bC-zMs"/>
+                            <constraint firstItem="sVt-lk-Seo" firstAttribute="trailing" secondItem="j4S-aI-vlK" secondAttribute="trailing" id="Csb-Ta-e39"/>
+                            <constraint firstItem="7cM-Ve-zpw" firstAttribute="top" secondItem="NfL-ZP-TOt" secondAttribute="bottom" constant="8" id="DtL-j8-tdv"/>
+                            <constraint firstItem="Qae-7Q-JqS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="EXs-cm-bhf"/>
+                            <constraint firstItem="sVt-lk-Seo" firstAttribute="top" secondItem="j4S-aI-vlK" secondAttribute="bottom" constant="8" id="Gnc-Mz-86z"/>
+                            <constraint firstItem="fC7-ba-GPw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="KNV-Ta-Cyr"/>
+                            <constraint firstItem="nAP-8u-RuZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="Wpu-gH-yTE"/>
+                            <constraint firstItem="NfL-ZP-TOt" firstAttribute="top" secondItem="Qae-7Q-JqS" secondAttribute="bottom" constant="23" id="ZBE-tK-w50"/>
+                            <constraint firstItem="7cM-Ve-zpw" firstAttribute="trailing" secondItem="NfL-ZP-TOt" secondAttribute="trailing" id="h7z-AV-fda"/>
+                            <constraint firstItem="NfL-ZP-TOt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="111" id="nBG-aQ-DHz"/>
+                            <constraint firstItem="j4S-aI-vlK" firstAttribute="centerY" secondItem="NfL-ZP-TOt" secondAttribute="centerY" id="qKt-BT-Ol5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nAP-8u-RuZ" secondAttribute="trailing" constant="153.33000000000001" id="tRp-YR-8Iy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="j4S-aI-vlK" secondAttribute="trailing" constant="111" id="taA-hB-sx7"/>
+                            <constraint firstItem="Ufw-sO-RxE" firstAttribute="top" secondItem="nAP-8u-RuZ" secondAttribute="bottom" constant="8" id="ujP-an-zV1"/>
+                            <constraint firstItem="Qae-7Q-JqS" firstAttribute="top" secondItem="fC7-ba-GPw" secondAttribute="bottom" constant="28.670000000000002" id="xsW-IH-fBs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ufw-sO-RxE" secondAttribute="trailing" constant="175" id="y0U-T0-h58"/>
+                            <constraint firstItem="nAP-8u-RuZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153.33000000000001" id="yFV-IN-4pg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="A1" destination="Ezp-6j-Sve" id="u6L-Vg-bgY"/>
+                        <outlet property="A2" destination="MRm-su-ZUO" id="ZJG-O5-u7G"/>
+                        <outlet property="A3" destination="j72-Nk-Ou0" id="H0f-rH-loB"/>
+                        <outlet property="B1" destination="xAu-ze-Fma" id="iFP-ec-LXO"/>
+                        <outlet property="B2" destination="6XA-KN-Rfm" id="dxx-qR-11e"/>
+                        <outlet property="B3" destination="cUK-bt-Vw0" id="HhZ-3M-mXR"/>
+                        <outlet property="C1" destination="Zjr-ZJ-EBM" id="DcV-Yj-X31"/>
+                        <outlet property="C2" destination="Qdg-ky-c2m" id="NKy-eW-yqK"/>
+                        <outlet property="C3" destination="N8F-YW-Ua6" id="mam-UP-Ucw"/>
+                        <outlet property="TurnoLabel" destination="Ufw-sO-RxE" id="8cW-Qs-Kh8"/>
+                        <outlet property="placarBola" destination="sVt-lk-Seo" id="vbZ-cf-kJ1"/>
+                        <outlet property="placarX" destination="7cM-Ve-zpw" id="DWs-Iv-zbS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.824427480916029" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
